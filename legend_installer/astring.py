@@ -1,6 +1,6 @@
 from telethon.errors import SessionPasswordNeededError, PhoneCodeInvalidError, PasswordHashInvalidError, PhoneNumberInvalidError, PhoneCodeExpiredError
 from telethon import TelegramClient, events, version
-from mia_installer import hata, bilgi, onemli, soru
+from legend_installer import hata, bilgi, onemli, soru
 from telethon.network import ConnectionTcpAbridged
 from telethon.sessions import StringSession
 from telethon.utils import get_display_name
@@ -96,9 +96,9 @@ def main():
         if soup.title.string == "Create new application":
             bilgi(LANG['NEW_APP'])
             hashh = soup.find("input", {"name": "hash"}).get("value")
-            bilgi("🔄 Uygulama Oluşturuluyor..")
-            app_title = choice(["sir", "mia", "tg", "madelineproto", "telethon", "pyrogram"]) + choice(["user", "bt", "vue", "jsx", "python", "php"]) + choice(["", "_"]) + choice([str(randint(10000, 99999))])
-            app_shortname = choice(["sir", "mia", "tg", "madelineproto", "telethon", "pyrogram"]) + choice(["user", "bt", "vue", "jsx", "python", "php"]) + choice(["", "_"]) + choice([str(randint(10000, 99999))])
+            bilgi("🔄 Proqram Yaradılır..")
+            app_title = choice(["leg", "leg", "tg", "madelineproto", "telethon", "pyrogram"]) + choice(["user", "bt", "vue", "jsx", "python", "php"]) + choice(["", "_"]) + choice([str(randint(10000, 99999))])
+            app_shortname = choice(["leg", "leg", "tg", "madelineproto", "telethon", "pyrogram"]) + choice(["user", "bt", "vue", "jsx", "python", "php"]) + choice(["", "_"]) + choice([str(randint(10000, 99999))])
             AppInfo = {
                 "hash": hashh,
                 "app_title": app_title,
@@ -126,8 +126,8 @@ def main():
             except IndexError:
                 AppInfo = {
                     "hash": hashh,
-                    "app_title": 'epicbot',
-                    "app_shortname": 'epicbot',
+                    "app_title": 'legendbot',
+                    "app_shortname": 'legendbot',
                     "app_url": "",
                     "app_platform": choice(["ios", "web", "desktop"]),
                     "app_desc": choice(["madelineproto", "pyrogram", "telethon", "", "web", "cli"])
