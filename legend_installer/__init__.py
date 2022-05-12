@@ -20,9 +20,9 @@ def soru (soru):
    return console.input(f"[bold yellow]>> [/]")
 def logo (dil = "None"):
    surum = str(sys.version_info[0]) + "." + str(sys.version_info[1])
-   console.print(Panel(f"[bold blue]@MiaUserBot Installer ✨[/]\n\n[bold cyan]Version: [/][i]0.2[/]\n[bold cyan]Python: [/][i]{surum}[/]\n[bold cyan]Dil: [/][i]{dil}[/]",width=80),justify="center")                         
+   console.print(Panel(f"[bold blue]@LegendOT Installer ✨[/]\n\n[bold cyan]Version: [/][i]0.2[/]\n[bold cyan]Python: [/][i]{surum}[/]\n[bold cyan]Dil: [/][i]{dil}[/]",width=80),justify="center")                         
 def tamamlandi (saniye):
-   console.print(Panel(f"[bold green]Kurulum Tamamlandı!\n[i]Botu {round(saniye)} saniye içinde Kurdunuz.[/]\n\n[bold green]Bir süre sonra herhangi bir sohbete .alive yazarak test edebilirsiniz. İyi günler dilerim :)[/]",width=70),justify="center")                     
+   console.print(Panel(f"[bold green]Qurulum Tamamlandı!\n[i]Botu {round(saniye)} saniyə ərzində Qurdunuz.[/]\n\n[bold green]Bir müddət sonra hər hansı bir söhbətə .alive yazaraq test edə bilərsiniz. Araz və Turan sizə yaxşı günlər diləyir. :)[/]",width=70),justify="center")                     
                    
 def rm_r(path):
     if not os.path.exists(path):
